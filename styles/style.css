@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   block-size: 100%;
 }
@@ -36,3 +37,26 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 0 30px;
+  margin: 133px 30px;
+}
+
+ .search-form {
+  display: flex;
+  justify-content: space-between;
+}
+.content__list {
+overflow-y: scroll;
+max-height: 300px;
+}
+.result__video-container {
+  width: 711px;
+}
+.result__video {
+  width: 100%;
+} 
