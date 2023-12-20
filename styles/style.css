@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 html {
   block-size: 100%;
 }
@@ -14,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -40,23 +39,82 @@ ol {
 
 .content {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: end;
   gap: 0 30px;
   margin: 133px 30px;
 }
-
- .search-form {
+.result__video-container {
+  margin-bottom: 16px;
+}
+.content__list {
   display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.content__video-card {
+  display: flex;
+  flex-direction: row;
+  width: 394px;
+  justify-content: space-between;
+}
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+}
+.search-form {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 .content__list {
-overflow-y: scroll;
-max-height: 300px;
+  overflow-y: scroll;
+  max-height: 300px;
 }
 .result__video-container {
   width: 711px;
+  max-height: 386px;
+  position: relative;
+}
+.content__list {
+  position: relative;
 }
 .result__video {
   width: 100%;
-} 
+}
+.title {
+  color: #fff;
+  font-family: Oswald;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+.content__accent {
+  color: #545050;
+  line-height: 94%; /* 70.5px */
+}
+.content__video-card-title {
+  color: #fff;
+  font-family: Oswald;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 30px */
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.content__video-card-description{
+  color: #FFF;
+font-family: Fira Sans Condensed;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 16.2px; /* 90% */
+}
+.content__card-link{
+  text-decoration: none;
+}
