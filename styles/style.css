@@ -45,13 +45,14 @@ ol {
   gap: 0 30px;
   margin: 133px 30px;
 }
-.result__video-container {
-  margin-bottom: 16px;
-}
+
 .content__list {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  overflow-y: scroll;
+  max-height: 300px;
+  position: relative;
 }
 .content__video-card {
   display: flex;
@@ -68,16 +69,9 @@ ol {
   flex-direction: row;
   justify-content: space-between;
 }
-.content__list {
-  overflow-y: scroll;
-  max-height: 300px;
-}
 .result__video-container {
+  margin-bottom: 16px;
   width: 711px;
-  max-height: 386px;
-  position: relative;
-}
-.content__list {
   position: relative;
 }
 .result__video {
@@ -95,7 +89,7 @@ ol {
 }
 .content__accent {
   color: #545050;
-  line-height: 94%; /* 70.5px */
+  line-height: 94%;
 }
 .content__video-card-title {
   color: #fff;
@@ -103,18 +97,95 @@ ol {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 100%; /* 30px */
+  line-height: 100%;
   text-transform: uppercase;
   margin-bottom: 6px;
 }
-.content__video-card-description{
-  color: #FFF;
-font-family: Fira Sans Condensed;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 16.2px; /* 90% */
+.content__video-card-description {
+  color: #fff;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.2px;
 }
-.content__card-link{
+.content__card-link {
   text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+fieldset {
+  border: 0;
+}
+.search-form__label {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.search-form__pseudo-checkbox {
+  border: 1px solid #fff;
+  width: 19px;
+  height: 19px;
+}
+.button {
+  color: #fff;
+
+  text-align: center;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.search-form__submit-button {
+  display: flex;
+  background-color: transparent;
+  border: 1px solid #fff;
+  align-self: end;
+  width: 194px;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.more-button {
+  display: flex;
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: 399px;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.search-form__textfield {
+  display: flex;
+  background-color: transparent;
+  width: 225px;
+  height: 27px;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-right: 0;
+  border-left: 0;
+}
+.search-form__fieldset-title {
+  color: #fff;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
 }
