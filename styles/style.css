@@ -16,6 +16,9 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -61,7 +64,6 @@ ol {
   overflow-y: scroll;
   max-height: 298px;
   position: relative;
-  padding: 3px;
 }
 
 .content__video-card {
@@ -123,6 +125,7 @@ ol {
 .content__card-link {
   text-decoration: none;
   display: block;
+  margin: 3px;
 }
 
 .content__card-link:focus-visible {
@@ -147,6 +150,7 @@ ol {
 
 .result__video {
   width: 100%;
+  object-fit: cover;
 }
 
 .title {
